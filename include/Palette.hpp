@@ -13,8 +13,9 @@ using namespace std;
 
 class TPalette {
 public:
+        TPalette::TPalette():TransparentIndex(-1) {}
 	vector<Color> Current;
-	int TransparentIndex = -1;
+	int TransparentIndex;
 
 	int getNearestIndex(Color &color);
 
